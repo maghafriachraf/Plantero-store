@@ -14,7 +14,7 @@ function Cart({cart, updateCart,currentCateg, updateCateg}) {
   return isOpen ? (
     <div className='cart' >
         <div className='cart-header'>
-          <a href='' className='close-button' onClick={() => setIsOpen(false)}><i class="uil uil-minus-square-full close"></i></a>
+          <a href='#' className='close-button' onClick={() => setIsOpen(false)}><i class="uil uil-minus-square-full close"></i></a>
         </div>
 
         <div className='cart-content'>
@@ -26,7 +26,7 @@ function Cart({cart, updateCart,currentCateg, updateCateg}) {
           ) )}
 
           <h3>Total : {total}€</h3>
-          <a href='' className='btn-vider' onClick={() => updateCart([])}> <i class="uil uil-trash-alt trash"></i></a>
+          <a href='#' className='btn-vider' onClick={() => updateCart([])}> <i class="uil uil-trash-alt trash"></i></a>
         </div>
 
     </div>
@@ -34,7 +34,7 @@ function Cart({cart, updateCart,currentCateg, updateCateg}) {
   ) : (
     <div className='cart-closed'>
         <div className='cart-header'>
-          <a href='' className='open-button'  onClick={() => setIsOpen(true)}> <i class="uil uil-shopping-bag open"></i></a>
+          <a href='#' className='open-button'  onClick={() => setIsOpen(true)}> <i class="uil uil-shopping-bag open"></i></a>
         </div>
     </div>
     )
