@@ -2,7 +2,6 @@ import {plantList} from '../datas/plantList.js'
 import '../styles/ShoppingList.css'
 import PlantItem from './PlantItem'
 import Categories from './Categories'
-import {useState} from 'react'
 
 
 
@@ -11,13 +10,7 @@ import {useState} from 'react'
   function ShoppingList({cart, updateCart, currentCateg, updateCateg}){
 
     const categories = plantList.reduce(
-        (acc,plant) => acc .includes(plant.category) ? acc : acc.concat(plant.category),[]
-    )
-
-
-    // const select = document.getElementById("categorie-select")
-    //   const val=select.options[select.selectedIndex].value
-
+        (acc,plant) => acc .includes(plant.category) ? acc : acc.concat(plant.category),[])
 
     function addToCart(name, price){
       const currentPlantAdded = cart.find((plant) => plant.name === name)
