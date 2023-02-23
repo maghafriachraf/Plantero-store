@@ -1,0 +1,24 @@
+.lmj-plant-list {
+	list-style-type: none;
+	padding: 32px;
+	display: flex;
+	flex-wrap: wrap;
+	max-width: default;
+}
+
+.lmj-shopping-list {
+	width: 100%;
+
+}
+
+.btn-add {
+	margin-right: 10;
+	background-color: #50A41C;
+	border-color: #50A41C;
+	color: white;
+}
+
+.btn-add:hover {
+	background-color: white;
+	color: #50A41C;
+}

@@ -1,0 +1,31 @@
+:root{
+--first-color:#50A41C;
+}
+
+.banner {
+  color: grey;
+  border-bottom: solid 3px  var(--first-color);
+}
+  
+.title{
+  color: var(--first-color);
+  font-size: 50px;
+  margin-left: 60px;
+}
+
+.subtitle{
+  position: relative;
+  top: 15px;
+  font-size: 20px;
+}
+.banner-logo{
+  display: flex;
+
+}
+
+.logo {
+    margin-left: 70px;
+   height: 125px;
+   width : 125px;
+}
+
